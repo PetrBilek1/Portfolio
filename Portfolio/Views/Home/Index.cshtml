@@ -1,0 +1,96 @@
+﻿@{
+    ViewData["Title"] = "Hi I'm Petr";
+}
+
+<section class="section-title">
+    <h1 class="main-title center">
+        <b>
+            Hi, I'm Petr
+        </b>
+    </h1>
+    <div class="main-description center font-secondary">
+        .NET developer
+    </div>
+
+    <div class="ball"></div>
+    <div class="cloud"></div>
+</section>
+
+<div style="width: 100%; overflow: hidden; margin-top: -30%;">
+    <div id="layer11" class="spacer1 layer11" style=""></div>
+    <div id="layer12" class="spacer1 layer12" style="margin-top: -38%; margin-left:-50%"></div>
+    <div id="layer13" class="spacer1 layer13" style="margin-top: -39%;"></div>
+</div>
+
+<section class="section-projects" style="">
+    <h2 class="projects-title"><b>SOME OF MY PROJECTS</b></h2>
+
+    <div class="project-cards-row">
+        <div class="project-card card cursor-pointer" onclick="redirect('titulkovac')">
+            <img src="img/titulkovac-logo.png" />
+            <div class="container">
+                <p>Web application tracking news sites, making a database of articles and their headline changes.</p>
+            </div>
+            <div class="container">
+                <p>
+                    <b>ASP.NET,</b>
+                    <b>Vue.js,</b>
+                    <b>Entity Framework,</b>
+                    <b>MSSQL,</b>
+                    <b>RabbitMQ,</b>
+                    <b>Redis</b>,
+                    <b>Docker</b>,
+                    <b>Kubernetes</b>
+                </p>
+                <p>
+                    <b>Released: 2023</b>
+                </p>
+                <p class="more-info link"><b>More info</b></p>
+            </div>
+        </div>
+
+        <div class="project-card card cursor-pointer" onclick="redirect('alqo')">
+            <img src="img/alqo-logo.png" />
+            <div class="container">
+                <p>Android application for tracking alcohol consumption. Offering interesting statistics and social functions like friend groups with combined statistics.</p>
+            </div>
+            <div class="container">
+                <p>
+                    <b>Xamarin,</b>
+                    <b>PHP,</b>
+                    <b>SQL</b>
+                </p>
+                <p>
+                    <b>Released: 2020</b>
+                </p>
+                <p class="more-info link"><b>More info</b></p>
+            </div>
+        </div>
+    </div>              
+</section>
+
+<section class="section-contact">
+    <h2 class="contact-title"><b>CONTACT ME</b></h2>
+    <p class="contact-paragraph"><b>petr.bilek777@gmail.com</b></p>
+</section>
+
+@section Scripts
+{
+    <script type="text/javascript">
+        $(document).scroll(function(){
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            
+            var percent = scroll / windowHeight > 1 ? 1 : scroll / windowHeight;
+
+            $("#layer11").css('margin-left', -(50 * percent) + "%");
+            $("#layer12").css('margin-left', (-50 + (50 * percent)) + "%");
+            $("#layer13").css('margin-left', -(30 * percent) + "%");
+            
+        })
+
+        function redirect(url){
+            window.location.href = url
+        }
+    </script>
+}

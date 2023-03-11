@@ -1,0 +1,198 @@
+﻿@{
+    ViewData["Title"] = "Project Titulkovač";
+}
+
+<section class="section-project-title" style="background-color: #26a6a6;">
+    <h1 class="project-title cursor-pointer" onclick="redirect('https://titulkovac.pbilek.eu')">
+        <b>TITULKOVAČ</b>
+    </h1>
+</section>
+
+<div class="spacer2 layer2"></div>
+
+<section class="section-project-content">
+    <div class="project-cards-row">
+        <div class="project-card card">
+            <div class="container" style="margin-top: 10px;">
+                <h4>Description</h4>
+                <p><b>Released: 2023</b></p>
+                <p>Titulkovač is a web application tracking news sites, making a database of articles and their headline changes.</p>
+                <p>The next step for this project is to use the collected data to calculate detailed statistics.</p>
+                <div class="show-project-row">
+                    <div class="show-project-btn show-project-btn-primary" onclick="redirect('https://titulkovac.pbilek.eu')">
+                        <b>LINK!</b>
+                    </div>
+                    <div class="show-project-btn show-project-btn-github" onclick="redirect('https://github.com/PetrBilek1/headlines')">
+                        <b>
+                            <img src="img/github.png" style="width: 22px; margin-top: -5px;"/>
+                            Github
+                        </b>
+                    </div>
+                </div>               
+            </div>
+        </div>
+
+        <div class="project-card card">
+            <div class="container" style="margin-top: 10px;">
+                <h4>Goal</h4>
+                <p>The goal of this project was to create a production ready single page application backed by REST API. And use this opportunity to tackle all the different problems that come with building and launching such app.</p>
+                <p><b>In this project I do not worry about overengineering since the goal is to learn as much as possible.</b></p>
+            </div>
+        </div>
+    </div>
+
+    <h2 style="margin-top: 45px;">Technologies used</h2>
+
+    <div class="project-cards-row project-cards-row-stretch-sm" style="margin-bottom: 70px;">
+        <div style="flex: 1;">
+            <div class="project-card card">
+                <div class="container" style="margin-top: 10px;">
+                    <h4>Frontend</h4>
+                    <p>
+                        <span class="tech-tag">
+                            <img src="img/vue.png" />
+                            <b>Vue.js</b>
+                        </span>
+                        <span class="tech-tag">
+                            <b>- vuex, vue-router, vue-cookies</b>
+                        </span>
+                    </p>
+                    <p>
+                        <span class="tech-tag">
+                            <img src="img/websocket.png" />
+                            <b>Websockets</b>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-card card">
+                <div class="container" style="margin-top: 10px;">
+                    <h4>Testing</h4>
+                    <p>
+                        <span class="tech-tag">
+                            <img src="img/xunit.png" />
+                            <b>XUnit</b>
+                        </span>
+                    </p>
+                    <p>
+                        <span class="tech-tag">
+                            <img src="img/testcontainers.png" />
+                            <b>Testcontainers</b>
+                        </span>
+                    </p>
+                    <p>
+                        <span class="tech-tag">
+                            <img src="img/fluentassertions.png" />
+                            <b>Fluent Assertions</b>
+                        </span>
+                    </p>
+                    <p>
+                        <span class="tech-tag">
+                            <img src="img/moq.png" />
+                            <b>Moq</b>
+                        </span>
+                    </p>
+                    <p>
+                        <span class="tech-tag">
+                            <img src="img/stryker.png" />
+                            <b>Stryker Mutator</b>
+                        </span>
+                    </p>
+                    <p>
+                        <span class="tech-tag">
+                            <b>Bogus</b>
+                        </span>
+                        <span class="tech-tag">
+                            <b>- fake data generator</b>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="project-card card">
+            <div class="container" style="margin-top: 10px;">
+                <h4>Backend</h4>
+                <p>
+                    <span class="tech-tag">
+                        <img src="img/aspnet.png" />
+                        <b>ASP.NET Core</b>
+                    </span>
+                </p>
+                <p>
+                    <span class="tech-tag">
+                        <img src="img/aspnet.png" />
+                        <b>Entity Framework Core</b>
+                    </span>
+                </p>
+                <p>
+                    <span class="tech-tag">
+                        <img src="img/mssql.png" />
+                        <b>Microsoft SQL Server</b>
+                    </span>
+                </p>
+                <p>
+                    <span class="tech-tag">
+                        <img src="img/rabbitmq.png" style="margin-top: -10px;"/>
+                        <b>RabbitMQ</b>
+                    </span>
+                    <span class="tech-tag">
+                        <b>- MassTransit</b>
+                    </span>
+                </p>
+                <p>
+                    <span class="tech-tag">
+                        <img src="img/redis.png" />
+                        <b>Redis</b>
+                    </span>
+                </p>
+                <p>
+                    <span class="tech-tag">
+                        <img src="img/cloud.png" />
+                        <b>Cloud Object Storage</b>
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="project-card card">
+            <div class="container" style="margin-top: 10px;">
+                <h4>DevOps</h4>
+                <p>
+                    <span class="tech-tag">
+                        <img src="img/docker.png" />
+                        <b>Docker</b>
+                    </span>
+                </p>
+                <p>
+                    <span class="tech-tag">
+                        <img src="img/kubernetes.png" />
+                        <b>Kubernetes</b>
+                    </span>
+                </p>
+                <p>
+                    <span class="tech-tag">
+                        <img src="img/github.png" />
+                        <b>Github Actions</b>
+                    </span>
+                </p>
+                <p>
+                    <span class="tech-tag">
+                        <img src="img/github.png" />
+                        <b>Github Container Registry</b>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>    
+</section>
+
+@section Scripts{
+    <script type="text/javascript">
+        function redirect(url) {
+            window.location = url
+        }
+    </script>
+}

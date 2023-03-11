@@ -1,0 +1,353 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.font-primary {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-secondary {
+    font-family: 'Courier Prime', monospace;
+}
+
+.center, .center-responsive {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.section-title {
+    position: sticky;
+    top: -35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0px 20vw;
+    z-index: -1;
+
+    background-color: #1F1426;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.section-projects {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20vw;
+    z-index: -0;
+    min-height: 60vh;
+    background-color: #F2D6BD;
+    color: #1F1426;
+    overflow: hidden;
+}
+
+.section-contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 30vh;
+    padding: 0px 20vw;
+    z-index: -0;
+    background-color: #F2D6BD;
+    color: #1F1426;
+    overflow: hidden;
+}
+
+.section-project-title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20vw;
+    z-index: -0;
+    
+    color: #e8be6d;
+    overflow: hidden;
+    min-height: 22vh;
+}
+
+.section-project-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+    padding: 0px 20vw;
+    background-color: #FFFFFF;
+    color: #1F1426;
+    overflow: hidden;
+}
+
+@media (max-width: 767px) {
+    .section-projects {
+        padding: 0px 5vw;
+    }
+
+    .section-project-title {
+        padding: 0px 5vw;
+        min-height: 20vh;
+    }
+
+    .section-project-content {
+        padding: 0px 5vw;
+    }
+}
+
+.main-title {
+    font-size: 60px;
+    margin-top: -30px;
+    color: #51a1ba
+}
+
+.main-description {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+    .main-title {
+        font-size: 30px;
+        margin-top: -15px;
+    }
+
+    .main-description {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+}
+
+.projects-title {
+    margin-top: 75px;
+    color: rgba(64, 19, 40, 1);
+}
+
+.contact-title {
+    margin-top: 75px;
+    color: rgba(64, 19, 40, 1);
+}
+
+.contact-paragraph {
+    font-size: 24px;
+    margin-top: 10px;
+    color: rgba(166, 46, 68, 1);
+}
+
+.project-title {
+    margin-top: 80px;
+    color: #e8be6d;
+    font-size: 48px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .project-title {
+        margin-top: 50px;
+    }
+}
+
+.project-description {
+    color: rgba(64, 19, 40, 1);
+    font-size: 24px;
+}
+
+.ball {
+    background-image: url('../svg/ball.svg');
+    width: 300px;
+    height: 300px;
+    margin-top: -100px;
+    margin-left: 450px;
+}
+
+.cloud {
+    background-image: url('../svg/cloud.svg');
+    width: 256px;
+    height: 256px;
+    margin-top: -150px;
+    margin-left: 300px;
+}
+
+.cloud-project {
+    background-image: url('../svg/cloud-red.svg');
+    width: 256px;
+    height: 256px;
+    margin-top: -300px;
+    margin-left: 0px;
+}
+
+.spacer1 {
+    aspect-ratio: 1440/280;
+    width: 200%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.spacer2 {
+    aspect-ratio: 900/80;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url('../svg/cloud-spacer.svg');
+}
+
+.layer11 {
+    background-image: url('../svg/cloud-spacer1.svg');
+}
+
+.layer12 {
+    background-image: url('../svg/cloud-spacer2.svg');
+}
+
+.layer13 {
+    background-image: url('../svg/cloud-spacer3.svg');
+}
+
+.layer2 {
+    background-image: url('../svg/layered-waves.svg');
+}
+
+.layer3 {
+    background-image: url('../svg/layered-peaks.svg');
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .card img {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .card .container {
+        padding: 2px 16px;
+    }
+
+.project-cards-row {
+    display: flex;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.project-cards-row-stretch-sm {
+    align-items: flex-start;
+}
+
+@media (max-width: 767px) {
+    .project-cards-row {
+        flex-direction: column;
+    }
+
+    .project-cards-row-stretch-sm {
+        align-items: stretch;
+    }
+}
+
+.project-card {
+    max-width: 360px;
+    margin: 1vh 1vw;
+    flex: 1;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.link {
+    cursor: pointer;
+    text-decoration: underline;
+    color: dodgerblue;
+}
+
+.show-project-row {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .show-project-row {
+        flex-direction: column;
+        margin: 15px 0;
+    }
+}
+
+.show-project-btn {
+    flex: 1;
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color ease-in-out 0.15s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+@media (max-width: 767px) {
+    .show-project-btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+.show-project-btn-primary {
+    background-color: #555555;
+    color: #e8be6d;
+}
+
+    .show-project-btn-primary:hover {
+        background-color: #333333;
+    }
+
+.show-project-btn-github {
+    background-color: #DDDDDD;
+}
+
+    .show-project-btn-github:hover {
+        background-color: #CCCCCC;
+    }
+
+.tech-tag {
+    font-size: 18px;
+}
+
+.tech-tag img {
+    width: 24px;
+}
+
+.more-info {
+    width: 100%;
+    text-align: center;
+}

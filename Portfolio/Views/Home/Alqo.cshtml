@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Project Titulkovač";
+}
+
+<section class="section-project-title" style="background-color: #FCE205;">
+    <h1 class="project-title cursor-pointer" onclick="redirect('https://play.google.com/store/apps/details?id=alqo.pivni_denik')">
+        <img src="img/alqo-header.png" style="height: 100px;"/>
+    </h1>
+</section>
+
+<div class="spacer2 layer3"></div>
+
+<section class="section-project-content">
+    <div class="project-cards-row">
+        <div class="project-card card">
+            <div class="container" style="margin-top: 10px;">
+                <h4>Description</h4>
+                <p><b>Released: 2020</b></p>
+                <p>ALQO is a mobile application for tracking your alcohol consumption. Alqo shows interesting statistics that you can share with friends in group feature. In group you can see profiles of your friends and your combined statistics. There is also a shop where you can buy titles for your profile, that you unlock by leveling up.</p>
+                <div class="show-project-row">
+                    <div class="show-project-btn show-project-btn-primary" onclick="redirect('https://play.google.com/store/apps/details?id=alqo.pivni_denik')">
+                        <b>LINK!</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card card">
+            <div class="container" style="margin-top: 10px;">
+                <h4>Goal</h4>
+                <p>The goal of this project was to create a mobile application for already existing web app that I made back in 2018 so that the two apps would work together.</p>
+                <p>Also I wanted to implement game features like levels, colectable items and a currency you can use to buy them.</p>
+                <p>In this project I for the first time created something resembling REST API.</p>
+            </div>
+        </div>
+    </div>    
+</section>
+
+@section Scripts{
+    <script type="text/javascript">
+        function redirect(url) {
+            window.location = url
+        }
+    </script>
+}
