@@ -22,7 +22,7 @@ jobs:
           password: ${{ secrets.GHCR_TOKEN }}
           
       - name: "🔧 extract portfolio metadata"
-        id: meta-webapi
+        id: meta-portfolio
         uses: docker/metadata-action@v4
         with:
           images: ghcr.io/${{ github.repository_owner }}/portfolio
@@ -33,6 +33,6 @@ jobs:
           context: .
           file: Portfolio/Dockerfile
           push: true
-          tags: ${{ steps.meta-webapi.outputs.tags }}
-          labels: ${{ steps.meta-webapi.outputs.labels }}
+          tags: ${{ steps.meta-portfolio.outputs.tags }}
+          labels: ${{ steps.meta-portfolio.outputs.labels }}
              
