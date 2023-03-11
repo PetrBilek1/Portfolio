@@ -72,6 +72,10 @@
 <section class="section-contact">
     <h2 class="contact-title"><b>CONTACT ME</b></h2>
     <p class="contact-paragraph"><b>petr.bilek777@gmail.com</b></p>
+    <p class="tech-tag contact-paragraph cursor-pointer" onclick="redirectAway('https://github.com/PetrBilek1')">
+        <img src="img/github.png"/>
+        <b>github: PetrBilek1</b>
+    </p>
 </section>
 
 @section Scripts
@@ -91,6 +95,10 @@
 
         function redirect(url){
             window.location.href = url
+        }
+
+        function redirectAway(url) {
+            window.location = url
         }
     </script>
 }
