@@ -26,8 +26,8 @@
     <h2 class="projects-title"><b>SOME OF MY PROJECTS</b></h2>
 
     <div class="project-cards-row">
-        <div class="project-card card cursor-pointer" onclick="redirect('titulkovac')">
-            <img src="img/titulkovac-logo.png" />
+        <div class="project-card card card-hover cursor-pointer" onclick="redirect('titulkovac')">
+            <img src="img/titulkovac-logo.png" alt="titulkovač application logo"/>
             <div class="container">
                 <p>Web application tracking news sites, making a database of articles and their headline changes.</p>
             </div>
@@ -49,8 +49,8 @@
             </div>
         </div>
 
-        <div class="project-card card cursor-pointer" onclick="redirect('alqo')">
-            <img src="img/alqo-logo.png" />
+        <div class="project-card card card-hover cursor-pointer" onclick="redirect('alqo')">
+            <img src="img/alqo-logo.png" alt="alqo application logo"/>
             <div class="container">
                 <p>Android application for tracking alcohol consumption. Offering interesting statistics and social functions like friend groups with combined statistics.</p>
             </div>
@@ -71,9 +71,13 @@
 
 <section class="section-contact">
     <h2 class="contact-title"><b>CONTACT ME</b></h2>
-    <p class="contact-paragraph"><b>petr.bilek777@gmail.com</b></p>
+    <p class="contact-paragraph">
+        <a href="mailto:petr.bilek777@gmail.com" class="link-unstyle">
+            <b>petr.bilek777@gmail.com</b>
+        </a>
+    </p>
     <p class="tech-tag contact-paragraph cursor-pointer" onclick="redirectAway('https://github.com/PetrBilek1')">
-        <img src="img/github.png"/>
+        <img src="img/github.png" alt="github logo"/>
         <b>github: PetrBilek1</b>
     </p>
 </section>
@@ -98,7 +102,7 @@
         }
 
         function redirectAway(url) {
-            window.location = url
+            window.open(url)
         }
     </script>
 }
